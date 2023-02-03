@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Måneskin</title>
+    <link rel="stylesheet" href="cssStyleSheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="./index.html" id="navbarLogo"><u>Måneskin Site</u></a>
+            <div class="navbarToggle" id="mobileMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbarMenu">
+                <li class="navbarItem">
+                    <a href="./index.html" class="navbarLinks">Home</a>
+                </li>
+                <li class="navbarItem">
+                    <a href="./links.html" class="navbarLinks">Links</a>
+                </li>
+                <li class="navbarItem">
+                    <a href="./about.html" class="navbarLinks">About</a>
+                </li>
+                <li class="navbarButton">
+                    <a href="./email.html" class="button">Sign Up For Email List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section / image reel-->
+
+    <div class="main">
+        <div class="mainContainer">
+            <div class="mainContent">
+                <h1>Welcome to my Måneskin site! </h1>
+                <br />
+                <h2>Songs</h2>
+                <br />
+                <p>Check out their top songs.</p>
+                <br />
+                <a href="https://www.youtube.com/channel/UCgQna2EqpzqzfBjlSmzT72w" class="mainButton" id="yt">Listen
+                    Now</a>
+
+                <!-- <button class="mainButton" id="yt">Listen Now</button>-->
+            </div>
+            <div class="mainImageContainer">
+
+                <img class="mySlides" src="https://maneskin.shop/wp-content/uploads/2021/08/raf750x1000075t10101001c5ca27c6-26.jpg" width=300 alt="Zitti E Buoni" id="MainImageContainer1">
+                <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/en/e/e5/M%C3%A5neskin_Mammamia.jpg" width=300 alt="MAMAMIA" id="MainImageContainer2">
+                <img class="mySlides" src="https://m.media-amazon.com/images/M/MV5BYWZjNzc2ODQtMzU2Ny00YzRmLWI5NGYtN2M1ZDQwZGVkYTBhXkEyXkFqcGdeQXVyNTc0NTY3NjU@._V1_FMjpg_UX1000_.jpg" width=300 alt="I wanna be your slave" id="MainImageContainer">
+                <img class="mySlides" src="https://vintagevinyl.com/Photo/418459768519" width=300 alt="Moriro da re" id="MainImageContainer3">
+                <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/en/b/bb/M%C3%A5neskin_-_Torna_a_casa.png" width=300 alt="Torna a casa" id="MainImageContainer4">
+                <img class="mySlides" src="https://i.scdn.co/image/ab67616d0000b273fa0ab3a28b5c52d8a5f97045" width=300 alt="Chosen" id="MainImageContainer5">
+                <img class="mySlides" src="https://m.media-amazon.com/images/M/MV5BYWQ4YTYzYWYtZWZkNi00MzExLTk5NzgtZTY4ZTBkNzg0MGI5XkEyXkFqcGdeQXVyNTkxMDU1Njg@._V1_FMjpg_UX1000_.jpg" width=300 alt="Vent'anni" id="MainImageContainer6">
+
+                <script>
+                    // the below code was taken from an example on w3schools
+                    var myIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {
+                            myIndex = 1
+                        }
+                        x[myIndex - 1].style.display = "block";
+                        setTimeout(carousel, 2000); // Change image every 2 seconds
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+To make the web app more responsive I used the commands "@media screen and (max-width: 768px)" and 
+"@media screen and (max-width: 480px)" in the CSS style sheet. These commands were used to detect 
+the screen size and make sure that the text and images were aligned to the center of the screen or tab.
+
+This was intended for use on mobile devices but can be in action seen if you make the size of the google chrome
+tab smaller on PC.
+
+The h1, h2, p and some image elements are all resized and rearranged depending on the screen size.
+using width : auto;
